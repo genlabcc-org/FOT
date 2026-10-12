@@ -1,0 +1,2 @@
+import{t as e}from"./rolldown-runtime.Dh6celcD.mjs";import{E as t,I as n,R as r}from"./react.861X9C4t.mjs";function i(){let[e,t]=r(!1);return n(()=>{t(!0)},[]),e}var a=e((()=>{t()}));export{i as n,a as t};
+//# sourceMappingURL=IsBrowser.p3XnozMG.mjs.map

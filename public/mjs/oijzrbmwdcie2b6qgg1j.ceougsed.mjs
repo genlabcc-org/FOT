@@ -1,0 +1,2 @@
+import{t as e}from"./rolldown-runtime.Dh6celcD.mjs";import{F as t,O as n}from"./react.hMW2PJqY.mjs";import{N as r,ht as i}from"./framer.DEaFVzT0.mjs";import{a,d as o,f as s,i as c,l,m as u,n as d,o as f,p,s as m,u as h,x as g}from"./propUtils.DA4m-EDx.mjs";var _=e((()=>{i(),n(),g()}));function v(){return t(()=>r.current(),[])}function y(){return t(()=>r.current()===r.canvas,[])}var b=e((()=>{n(),i()})),x=e((()=>{g(),u(),p(),s(),o(),h(),l(),m(),f(),a(),_(),b(),c(),d()}));export{v as i,b as n,y as r,x as t};
+//# sourceMappingURL=OIjZRBmWDcIE2B6qgG1j.CeoUGsed.mjs.map

@@ -1,0 +1,212 @@
+@import './framer.css';
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100%;
+  background-color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* ==========================================================
+   CUSTOM CURSOR FOLLOWER ANIMATION
+   ========================================================== */
+.custom-cursor-dot {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  background-color: #111212;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999999;
+  will-change: transform;
+  transition: width 0.2s cubic-bezier(0.25, 1, 0.5, 1),
+              height 0.2s cubic-bezier(0.25, 1, 0.5, 1),
+              background-color 0.2s ease,
+              opacity 0.2s ease;
+}
+
+.custom-cursor-dot.hovered {
+  width: 6px;
+  height: 6px;
+  background-color: #36c5f0;
+}
+
+.custom-cursor-dot.clicking {
+  transform: translate(-50%, -50%) scale(0.6) !important;
+}
+
+.custom-cursor-follower {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 32px;
+  height: 32px;
+  border: 1.5px solid rgba(17, 18, 18, 0.5);
+  background-color: rgba(54, 197, 240, 0.04);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999998;
+  will-change: transform;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: width 0.25s cubic-bezier(0.25, 1, 0.5, 1),
+              height 0.25s cubic-bezier(0.25, 1, 0.5, 1),
+              border-color 0.25s ease,
+              background-color 0.25s ease;
+}
+
+.custom-cursor-follower.hovered {
+  width: 52px;
+  height: 52px;
+  border-color: #36c5f0;
+  background-color: rgba(54, 197, 240, 0.12);
+  backdrop-filter: blur(1px);
+}
+
+.custom-cursor-follower.clicking {
+  width: 24px;
+  height: 24px;
+  border-color: #111212;
+  background-color: rgba(17, 18, 18, 0.15);
+}
+
+.custom-cursor-badge-text {
+  font-family: 'DM Mono', monospace;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #111212;
+  text-transform: uppercase;
+  user-select: none;
+}
+
+/* ==========================================================
+   HERO CURSOR TAGS & AVATAR ANIMATIONS
+   ========================================================== */
+/* Product Designer Cursor Badge */
+.framer-ie8nfk {
+  animation: floatProductDesigner 5s ease-in-out infinite alternate !important;
+  transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+  cursor: pointer;
+}
+
+.framer-ie8nfk:hover {
+  animation-play-state: paused !important;
+  transform: translate(-50%, -50%) scale(1.08) rotate(4deg) !important;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+}
+
+/* Chicago, IL Cursor Badge */
+.framer-1m00fsl {
+  animation: floatChicago 6.5s ease-in-out infinite alternate !important;
+  transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+  cursor: pointer;
+}
+
+.framer-1m00fsl:hover {
+  animation-play-state: paused !important;
+  transform: translate(-50%, -50%) scale(1.08) rotate(-10deg) !important;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+}
+
+/* Floating Avatar Speech Bubbles */
+.framer-1myc1q3-container {
+  animation: floatAvatarRight 6s ease-in-out infinite alternate !important;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.framer-1myc1q3-container:hover {
+  transform: translate(-50%, -50%) scale(1.1) !important;
+}
+
+.framer-1eo2c47-container {
+  animation: floatAvatarLeft 5.5s ease-in-out infinite alternate !important;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.framer-1eo2c47-container:hover {
+  transform: translate(-50%, -50%) scale(1.1) !important;
+}
+
+/* Polaroids interactive hover */
+.framer-1usv7ks-container {
+  transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.4s ease !important;
+  cursor: pointer;
+}
+
+.framer-1usv7ks-container:hover {
+  transform: rotate(4deg) scale(1.06) !important;
+  z-index: 5 !important;
+}
+
+.framer-1g6trdm-container {
+  transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.4s ease !important;
+  cursor: pointer;
+}
+
+.framer-1g6trdm-container:hover {
+  transform: rotate(-6deg) scale(1.06) !important;
+  z-index: 5 !important;
+}
+
+/* 2x2 badges hover animations */
+.framer-x1b5j5 {
+  transition: transform 0.3s ease;
+}
+
+/* Keyframes */
+@keyframes floatProductDesigner {
+  0% {
+    transform: translate(-50%, -50%) translate(0, 0) rotate(0deg);
+  }
+  50% {
+    transform: translate(-50%, -50%) translate(35px, -25px) rotate(8deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) translate(70px, -45px) rotate(14deg);
+  }
+}
+
+@keyframes floatChicago {
+  0% {
+    transform: translate(-50%, -50%) rotate(-15deg) translate(0, 0);
+  }
+  50% {
+    transform: translate(-50%, -50%) rotate(-4deg) translate(-25px, -20px);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(8deg) translate(-50px, -40px);
+  }
+}
+
+@keyframes floatAvatarRight {
+  0% {
+    transform: translate(-50%, -50%) translateY(0);
+  }
+  100% {
+    transform: translate(-50%, -50%) translateY(-18px) rotate(4deg);
+  }
+}
+
+@keyframes floatAvatarLeft {
+  0% {
+    transform: translate(-50%, -50%) translateY(0);
+  }
+  100% {
+    transform: translate(-50%, -50%) translateY(16px) rotate(-4deg);
+  }
+}
+

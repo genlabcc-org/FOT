@@ -1,0 +1,2 @@
+import{t as e}from"./rolldown-runtime.Dh6celcD.mjs";import{c as t,s as n}from"./react.hMW2PJqY.mjs";function r(e){return t=>n(e,{...t,"data-default-form-id":`288801`})}var i=e((()=>{t()}));export{r as n,i as t};
+//# sourceMappingURL=DefaultCalendarFormAttribute.DK3jDn1T.mjs.map

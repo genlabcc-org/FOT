@@ -1,0 +1,48 @@
+import{n as e,t}from"./rolldown-runtime.Dh6celcD.mjs";import{D as n,F as r,O as i,P as a,R as o,S as ee,c as s,m as c,s as l,u}from"./react.hMW2PJqY.mjs";import{V as d,c as f,o as p,r as m}from"./motion.CaZjHSpz.mjs";import{Ft as te,G as h,I as g,K as _,Ot as v,Sn as y,St as b,Z as x,Zt as S,_n as C,c as w,et as T,gn as ne,hn as E,ht as D,o as re,ot as O,w as ie,z as k,zt as A}from"./framer.DEaFVzT0.mjs";import{n as j,t as M}from"./Tracking.CwHp_7mx.mjs";import{n as N,r as P,t as F}from"./YpBHtYzmG.D2dyC4dJ.mjs";function ae(e,t){for(;t;){let n=L[t.id];if(n&&n.status===`fulfilled`){let t=n.read()[e];if(t)return t}t=t.fallback}}function I(e){let t=[];for(;e;){let n=L[e.id];if(n){let e=n.preload();e&&t.push(e)}e=e.fallback}if(t.length>0)return Promise.all(t)}function oe(e){let t=I(e);if(t)throw t}var L,R=t((()=>{D(),L={zPfFQNtX1:new ie(()=>import(`./a3jlaIk3M-0.BpDtWPPG.mjs`))}})),z=e({__FramerMetadata__:()=>$,default:()=>Q});function B(e,...t){let n={};return t?.forEach(t=>t&&Object.assign(n,e[t])),n}var V,H,U,W,G,K,q,J,Y,X,Z,Q,$,se=t((()=>{s(),D(),m(),i(),j(),R(),P(),V=O(F),H=y(C(F,{nodeId:`kdCHElqgz`,override:M,scopeId:`a3jlaIk3M`}),N),U=[`oEiGuX2fW`,`xNK4Hci6m`],W=`framer-qeiXP`,G={oEiGuX2fW:`framer-v-fzsxn7`,xNK4Hci6m:`framer-v-zp1fp7`},b(),K={bounce:0,delay:0,duration:1,type:`spring`},q=({value:e,children:t})=>{let n=a(f),i=e??n.transition,o=r(()=>({...n,transition:i}),[JSON.stringify(i)]);return l(f.Provider,{value:o,children:t})},J={"Variant 1":`oEiGuX2fW`,"Variant 2":`xNK4Hci6m`},Y=d.create(o),X=({backgroundBlur:e,height:t,id:n,width:r,...i})=>({...i,SPwpebQSu:e??i.SPwpebQSu??0,variant:J[i.variant]??i.variant??`oEiGuX2fW`}),Z=(e,t)=>e.layoutDependency?t.join(`-`)+e.layoutDependency:t.join(`-`),Q=ne(c(function(e,t){let r=ee(null),i=t??r,a=n(),{activeLocale:s,contentLocale:c,setLocale:f}=S(),m=A(),{style:h,className:_,layoutId:v,variant:y,SPwpebQSu:b,...C}=X(e),{baseVariant:w,classNames:T,clearLoadingGesture:ne,gestureHandlers:D,gestureVariant:O,isLoading:ie,setGestureState:j,setVariant:M,variants:N}=E({cycleOrder:U,defaultVariant:`oEiGuX2fW`,ref:i,variant:y,variantClassNames:G}),P=Z(e,N),F=x(W),{activeVariantCallback:I,delay:L}=te(w),R=I(async(...e)=>{M(`xNK4Hci6m`)}),z=I(async(...e)=>{M(`oEiGuX2fW`)});return oe(s),l(p,{id:v??a,children:l(Y,{animate:N,initial:!1,children:l(q,{value:K,children:u(d.div,{...C,...D,className:x(F,`framer-fzsxn7`,_,T),"data-framer-name":`Variant 1`,layoutDependency:P,layoutId:`oEiGuX2fW`,ref:i,style:{"--corner-shape-fallback":1,backdropFilter:`blur(5px)`,backgroundColor:`rgba(31, 31, 31, 0.5)`,borderBottomLeftRadius:`calc(8px*var(--one-if-corner-shape-supported,var(--corner-shape-fallback,1)))`,borderBottomRightRadius:`calc(8px*var(--one-if-corner-shape-supported,var(--corner-shape-fallback,1)))`,borderTopLeftRadius:`calc(8px*var(--one-if-corner-shape-supported,var(--corner-shape-fallback,1)))`,borderTopRightRadius:`calc(8px*var(--one-if-corner-shape-supported,var(--corner-shape-fallback,1)))`,boxShadow:`0px 0px 0px 1px rgba(255, 255, 255, 0.1)`,cornerShape:`superellipse(1)`,WebkitBackdropFilter:`blur(5px)`,...h},...B({xNK4Hci6m:{"data-framer-name":`Variant 2`}},w,O),children:[l(d.div,{className:`framer-t3vt2x`,layoutDependency:P,layoutId:`EUk5y3WHo`,children:l(re,{height:16,width:`16px`,y:(m?.y||0)+0+(((m?.height||200)-0)*.5000000000000002-8),children:l(k,{className:`framer-g5eapy-container`,layoutDependency:P,layoutId:`kdCHElqgz-container`,nodeId:`kdCHElqgz`,rendersWithMotion:!0,scopeId:`a3jlaIk3M`,children:l(H,{EJ6Byc2rw:`rgb(255, 255, 255)`,height:`100%`,id:`kdCHElqgz`,K2pn_gbAl:R,layoutId:`kdCHElqgz`,Ru900nShJ:`Goal:
+Ensure Node.js v24 or newer is installed, then run the @framer/agent setup.
+
+Check first:
+Run \`node --version\`.
+
+If Node.js is already installed and the major version is 24 or higher:
+Do not install or modify Node.js. Continue to the @framer/agent setup.
+
+If Node.js is missing or older than v24:
+Install an official Node.js release with major version 24 or higher.
+
+Install policy:
+Use an existing package manager only if it is already installed.
+Do not install Homebrew, winget, Chocolatey, Scoop, nvm, fnm, or another package manager just for this task.
+
+Install options:
+macOS:
+- If Homebrew is already installed, use it to install Node.js.
+- Otherwise use the official Node.js \`.pkg\` installer.
+
+Windows:
+- If winget is already installed, use it to install Node.js.
+- Otherwise use the official Node.js \`.msi\` installer.
+
+Linux:
+- If the system package manager can install Node.js v24 or newer, use it.
+- For Debian/Ubuntu or RHEL/Fedora-compatible systems, use the official NodeSource instructions for Node.js 24 or newer.
+- Otherwise use the official Node.js standalone Linux binary for the detected architecture.
+
+Official downloads:
+Use the static latest Node.js release directory when downloading installers or binaries:
+https://nodejs.org/download/release/latest/
+
+Verify:
+After installing, run \`node --version\` again.
+Only continue if the major version is 24 or higher.
+
+Final step:
+Run \`npx @framer/agent@latest setup\`.
+
+Success message:
+If the setup completes successfully, tell the user they are now set up and what the user should do next:
+
+Create a new thread, then copy your Framer project link:
+- Browser: copy the address bar when the project is open.
+- App: right-click the project tab, then choose "Copy Project Link".`,style:{height:`100%`,width:`100%`},width:`100%`,...B({xNK4Hci6m:{d0iDhAtfF:z,K2pn_gbAl:void 0}},w,O)})})})}),u(d.div,{className:`framer-1lw5jv5`,layoutDependency:P,layoutId:`lhLZo8bdB`,style:{backdropFilter:b===0?void 0:`blur(`+b+`px)`,WebkitBackdropFilter:b===0?void 0:`blur(`+b+`px)`},children:[l(d.div,{className:`framer-rycyov`,layoutDependency:P,layoutId:`FQFmY3odB`,style:{backgroundColor:`rgba(0, 153, 255, 0.2)`}}),l(g,{__fromCanvasComponent:!0,children:ae(`v0`,c)??l(o,{children:l(d.p,{dir:`auto`,style:{"--font-selector":`RlM7SmV0QnJhaW5zIE1vbm8tcmVndWxhcg==`,"--framer-font-family":`"JetBrains Mono", "JetBrains Mono Placeholder", sans-serif`,"--framer-font-open-type-features":`'ss07' on, 'cv05' on, 'ss03' on, 'cv11' on`,"--framer-font-size":`14px`,"--framer-letter-spacing":`-0.01px`,"--framer-line-height":`1.3em`,"--framer-text-alignment":`left`,"--framer-text-color":`var(--extracted-r6o4lv, var(--token-26e3cb56-8447-4a64-9b7d-37f16a9909d4, rgb(255, 255, 255)))`},children:l(d.code,{children:`Copy install prompt`})})}),className:`framer-13bbzcb`,fonts:[`FS;JetBrains Mono-regular`],layoutDependency:P,layoutId:`z8qQWEk99`,style:{"--extracted-r6o4lv":`var(--token-26e3cb56-8447-4a64-9b7d-37f16a9909d4, rgb(255, 255, 255))`,"--framer-link-text-color":`rgb(0, 153, 255)`,"--framer-link-text-decoration":`underline`},verticalAlignment:`top`,withExternalLayout:!0})]})]})})})})}),[`.framer-qeiXP.framer-v879l0, .framer-qeiXP .framer-v879l0 { display: block; }`,`.framer-qeiXP.framer-fzsxn7 { align-content: center; align-items: center; display: flex; flex-direction: row; flex-wrap: nowrap; height: min-content; justify-content: space-between; overflow: var(--overflow-clip-fallback, clip); padding: 8px 15px 8px 15px; position: relative; width: 276px; will-change: var(--framer-will-change-override, transform); }`,`.framer-qeiXP .framer-t3vt2x { bottom: 0px; flex: none; overflow: visible; position: absolute; right: 0px; top: 0px; width: 70px; z-index: 1; }`,`.framer-qeiXP .framer-g5eapy-container { flex: none; height: 16px; position: absolute; right: 11px; top: calc(50.00000000000002% - 16px / 2); width: 16px; z-index: 1; }`,`.framer-qeiXP .framer-1lw5jv5 { align-content: center; align-items: center; display: flex; flex: none; flex-direction: row; flex-wrap: nowrap; gap: 10px; height: min-content; justify-content: flex-start; overflow: visible; padding: 0px; position: relative; width: min-content; }`,`.framer-qeiXP .framer-rycyov { bottom: 0px; flex: none; left: 0px; overflow: visible; position: absolute; top: 0px; width: 0px; z-index: 1; }`,`.framer-qeiXP .framer-13bbzcb { flex: none; height: auto; position: relative; white-space: pre; width: auto; }`,`.framer-qeiXP.framer-v-zp1fp7 .framer-rycyov { right: 0px; width: unset; }`],`framer-qeiXP`),Q.displayName=`External Agent Install Prompt`,Q.defaultProps={height:34,width:276},_(Q,{variant:{options:[`oEiGuX2fW`,`xNK4Hci6m`],optionTitles:[`Variant 1`,`Variant 2`],title:`Variant`,type:w.Enum},SPwpebQSu:{defaultValue:0,max:5,min:0,title:`Background Blur`,type:w.Number},onSPwpebQSuChange:{changes:`SPwpebQSu`,type:w.ChangeHandler}}),h(Q,[{explicitInter:!0,fonts:[{cssFamilyName:`JetBrains Mono`,openType:!0,source:`fontshare`,style:`normal`,uiFamilyName:`JetBrains Mono`,url:`https://framerusercontent.com/third-party-assets/fontshare/wf/TZ2PMVPWEVHUPJWOPNSWLOXAF6QPOEMZ/O4OZKA7ZLZGT4JOGT5IEKURK6U3RXYGM/EO5MKE3BUDOZN44BP4HDPXAJAC2BIMCD.woff2`,weight:`400`}]},...V],{supportsExplicitInterCodegen:!0}),Q.loader={load:(e,t)=>v([()=>T(F,{},t)],t)},$={exports:{default:{type:`reactComponent`,name:`Framera3jlaIk3M`,slots:[],annotations:{framerResolvesOwnDefaults:`true`,framerContractVersion:`1`,framerDisplayContentsDiv:`false`,framerAutoSizeImages:`true`,framerImmutableVariables:`true`,framerIntrinsicHeight:`34`,framerVariables:`{"SPwpebQSu":"backgroundBlur"}`,framerIntrinsicWidth:`276`,framerComponentViewportWidth:`true`,framerColorSyntax:`true`,framerCanvasComponentVariantDetails:`{"propertyName":"variant","data":{"default":{"layout":["fixed","auto"]},"xNK4Hci6m":{"layout":["fixed","auto"]}}}`}},Props:{type:`tsType`,annotations:{framerContractVersion:`1`}},__FramerMetadata__:{type:`variable`}}}}));export{z as n,se as r,Q as t};
+//# sourceMappingURL=a3jlaIk3M.CCtDxr0L.mjs.map
