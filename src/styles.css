@@ -151,8 +151,9 @@ header.top { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 60; 
 
 /* talk */
 .talk { position: relative; padding-block: 60px 120px; }
-.talk .grid { display: grid; grid-template-columns: 1fr 1.1fr; gap: 30px; align-items: start; }
-.blob { width: 100%; max-width: 420px; justify-self: center; }
+.talk .grid { display: grid; grid-template-columns: 280px 1fr; gap: 36px; align-items: start; }
+.blob-col { display: flex; flex-direction: column; align-items: center; }
+.blob { width: 100%; max-width: 220px; margin-inline: auto; }
 .blob svg { width: 100%; height: auto; display: block; overflow: visible; }
 .eye { transition: transform .08s linear; }
 .mouth { fill: none; stroke: var(--ink); stroke-width: 7; stroke-linecap: round; transition: opacity .3s ease, transform .3s ease; transform-origin: 150px 180px; }
@@ -162,23 +163,31 @@ header.top { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 60; 
 .blob.smiling .mouth-neutral { opacity: 0; transform: scaleY(.5); }
 .blob.smiling .mouth-smile { opacity: 1; transform: scaleY(1); }
 @keyframes happy-bob { 0%, 100% { transform: translateY(0) rotate(0); } 35% { transform: translateY(-10px) rotate(-2deg); } 70% { transform: translateY(0) rotate(2deg); } }
-.talk h2 { font-family: var(--f-display); font-weight: 400; font-size: clamp(2.4rem, 7.5vw, 4.6rem); line-height: 1.02; margin: 0; letter-spacing: .02em; }
-.talk .copy { margin: 18px 0 0; max-width: 28em; }
+.talk h2 { font-family: var(--f-display); font-weight: 400; font-size: clamp(1.85rem, 4.3vw, 3.6rem); line-height: 1.05; margin: 0; letter-spacing: .02em; white-space: nowrap; }
+.talk-apos { display: inline-block; margin-inline: -0.28em; }
+.talk .copy { margin: 16px 0 0; max-width: 38em; }
+.group-pic-frame { border-radius: 16px; overflow: hidden; border: 2.5px solid var(--ink, #101010); box-shadow: 7px 7px 0 var(--ink, #101010); background: var(--paper, #fff); transition: transform .2s ease, box-shadow .2s ease; }
+.group-pic-frame:hover { transform: translate(-2px, -2px); box-shadow: 9px 9px 0 var(--ink, #101010); }
+.group-pic-frame img { width: 100%; height: auto; display: block; }
 form { margin-top: 24px; display: grid; gap: 12px; max-width: 460px; }
 label { display: grid; gap: 6px; font-family: var(--f-mono); font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; }
 input, select { font: 500 16px var(--f-body); color: var(--ink); background: var(--paper); border: 1.5px solid var(--ink); border-radius: 0; padding: 12px 14px; width: 100%; min-width: 0; }
 .ok { display: none; background: var(--mint); border: 1.5px solid var(--ink); padding: 11px 14px; font-weight: 600; margin: 0; }
 .ok.show { display: block; }
 .fine { font-size: 13px; color: var(--muted); margin: 0; }
-.comment { position: absolute; left: 0; bottom: 18px; width: min(270px, 80%); background: #fff; border-radius: 14px; box-shadow: 0 8px 28px rgba(0,0,0,.18); padding: 12px 16px 16px; }
+.comment { position: relative; margin-top: 14px; width: min(280px, 100%); background: #fff; border-radius: 14px; box-shadow: 0 8px 28px rgba(0,0,0,.18); padding: 12px 16px 16px; z-index: 2; }
 .comment small { display: block; color: #777; font-size: 15px; padding-bottom: 8px; border-bottom: 1px solid #E6E6E6; }
 .comment .who { display: flex; gap: 10px; margin-top: 12px; }
 .comment .av { width: 36px; height: 36px; border-radius: 50%; background: var(--cyan); display: grid; place-items: center; font-family: var(--f-mono); font-size: 11px; font-weight: 700; flex: none; }
 .comment b { display: block; font-weight: 500; }
 .comment p { margin: 2px 0 0; font-size: 15px; line-height: 1.3; }
+.talk-btn-wrap { margin-top: 20px; display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
 @media (max-width: 860px) {
-  .talk .grid { grid-template-columns: 1fr; }
-  .comment { position: static; margin-top: 30px; }
+  .talk .grid { grid-template-columns: 1fr; gap: 36px; }
+  .blob-col { display: flex; flex-direction: column; align-items: center; }
+  .blob { max-width: 180px; margin-inline: auto; justify-self: center; }
+  .comment { margin: 16px auto 0; width: min(300px, 92%); }
+  .talk-btn-wrap { justify-content: center; }
   .talk { padding-bottom: 50px; }
 }
 
@@ -189,7 +198,7 @@ input, select { font: 500 16px var(--f-body); color: var(--ink); background: var
 .band h4 { margin: 0 0 10px; font-family: var(--f-mono); font-size: 12.5px; letter-spacing: .08em; text-transform: uppercase; color: var(--ink); }
 .band p, .band li { margin: 0; font-size: 16px; }
 .band ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
-.band .big { grid-column: 1 / -1; font-family: var(--f-display); font-size: clamp(2.4rem, 12vw, 7rem); letter-spacing: .02em; margin-top: 18px; line-height: 1; color: var(--ink); }
+.band .big { grid-column: 1 / -1; font-family: var(--f-display); font-size: clamp(2.4rem, 12vw, 7rem); letter-spacing: .02em; margin-top: 18px; line-height: 1; color: var(--ink); text-align: center; }
 .band .lead { background: var(--paper); color: var(--ink); padding: 6px 12px; display: inline-block; font-weight: 600; box-shadow: 4px 4px 0 var(--pink); }
 @media (max-width: 760px) { .band .in { grid-template-columns: 1fr; } }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .eye, .mouth { transition: none; } .blob.smiling svg { animation: none; } }

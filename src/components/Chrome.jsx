@@ -162,7 +162,19 @@ export function Footer() {
             <ul>
               <li>Sat, 14 Nov 2026</li>
               <li>10:00 AM to 1:00 PM IST</li>
-              <li>Venue to be confirmed</li>
+              <li style={{ marginTop: 4, lineHeight: 1.45 }}>
+                <a
+                  href="https://maps.google.com/?q=121/C,+Kottar-Parvathipuram+Rd,+Chetti+Kulam,+Simon+Nagar,+Nagercoil,+Tamil+Nadu+629001"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ textDecoration: 'none', color: 'inherit' }}
+                  title="Open location in Google Maps"
+                >
+                  121/C, Kottar-Parvathipuram Rd,<br />
+                  Chetti Kulam, Simon Nagar,<br />
+                  Nagercoil, Tamil Nadu 629001
+                </a>
+              </li>
             </ul>
           </div>
           <div>
@@ -173,7 +185,7 @@ export function Footer() {
               <li><a href="#register">Register</a></li>
             </ul>
           </div>
-          <div className="big" aria-hidden="true">FOT</div>
+          <div className="big" aria-hidden="true" style={{ textAlign: 'center' }}>FOT</div>
         </div>
       </div>
     </footer>

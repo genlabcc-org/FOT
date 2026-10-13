@@ -60,8 +60,21 @@ export default function Talk() {
           </p>
         </div>
         <div className="grid">
-          <Blob smiling={smiling || registered} />
-          <div>
+          <div className="blob-col">
+            <Blob smiling={smiling || registered} />
+            <div className="comment">
+              <small>Comment</small>
+              <div className="who">
+                <span className="av">FT</span>
+                <div>
+                  <b>FOT crew</b>
+                  <p>Open to students, freshers, freelancers and pros. Bring a friend and a laptop.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="media-col">
             <div className="talk-group-container">
               <div
                 className="group-pic-frame"
@@ -74,7 +87,7 @@ export default function Talk() {
                 />
               </div>
 
-              <div style={{ marginTop: 20, display: 'flex', alignItems: 'center', gap: 16, flexWrap: 'wrap' }}>
+              <div className="talk-btn-wrap">
                 <button
                   className="cta"
                   type="button"
@@ -96,16 +109,6 @@ export default function Talk() {
                   </p>
                 )}
               </div>
-            </div>
-          </div>
-        </div>
-        <div className="comment">
-          <small>Comment</small>
-          <div className="who">
-            <span className="av">FT</span>
-            <div>
-              <b>FOT crew</b>
-              <p>Open to students, freshers, freelancers and pros. Bring a friend and a laptop.</p>
             </div>
           </div>
         </div>

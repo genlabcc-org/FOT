@@ -3,7 +3,7 @@ export const EVENT = {
   full: 'Friends of Tech',
   date: 'Sat, 14 Nov 2026',
   time: '10:00 AM to 1:00 PM IST',
-  venue: 'Venue to be confirmed',
+  venue: '121/C, Kottar-Parvathipuram Rd, Chetti Kulam, Simon Nagar, Nagercoil, Tamil Nadu 629001',
 }
 
 export const NAV = [
