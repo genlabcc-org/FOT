@@ -15,25 +15,25 @@ export const NAV = [
 
 export const SESSIONS = [
   {
-    id: 1, tone: 'p1', art: 'voice', label: 'Talk · 25 min', when: 'Sat 14 Nov 2026 · 10:00 AM',
+    id: 1, tone: 'p1', art: 'voice', label: 'Live Demo & Talk · 25 min', when: 'Sat 14 Nov 2026 · 10:00 AM',
     title: 'When AI Finds Its Voice',
-    desc: 'Discover how AI listens, understands human speech, and responds naturally. Explore the technology behind voice agents and the future of conversational experiences.',
-    tags: ['AI', 'Voice agents'],
+    desc: 'Discover how AI listens, understands human speech, and responds naturally. Explore the technology behind voice agents.',
+    tags: ['Beginner','AI'],
   },
   {
-    id: 2, tone: 'p2', art: 'chip', label: 'Live demo · 30 min', when: 'Sat 14 Nov 2026 · 10:45 AM',
-    title: 'AI Tools That Save Hours',
-    desc: "Watch real workflows for coding, research and design. Bring a task and we'll try it live.",
-    tags: ['AI', 'Productivity'],
+    id: 2, tone: 'p2', art: 'chip', label: 'Hackathon · 3 Hours', when: 'Sat 14 Nov 2026 · 10:45 AM',
+    title: 'Build Beyond Limits',
+    desc: "Big ideas. Bold thinking. Real solutions. Join the challenge, collaborate with innovators, and build something extraordinary.",
+    tags: ['Hackathon', 'AI'],
   },
   {
-    id: 3, tone: 'p3', art: 'award', label: 'Workshop · 45 min', when: 'Sat 14 Nov 2026 · 11:30 AM',
-    title: 'Design It, Then Ship It',
-    desc: 'Turn a rough idea into a clean landing page. Sketch, build and publish with a mentor beside you.',
-    tags: ['Design', 'Hands-on'],
+    id: 3, tone: 'p3', art: 'award', label: 'Prize Distribution · 15 min', when: 'Sat 14 Nov 2026 · 11:30 AM',
+    title: 'Celebrating the Champions',
+    desc: "Every great idea deserves recognition. Let's celebrate the winners, honor their efforts, and make every achievement unforgettable.",
+    tags: ['ACHIEVEMENT', 'RECOGNITION'],
   },
   {
-    id: 4, tone: 'p4', art: 'network', label: 'Open floor · 30 min', when: 'Sat 14 Nov 2026 · 12:30 PM',
+    id: 4, tone: 'p4', art: 'community', label: 'Open floor · 30 min', when: 'Sat 14 Nov 2026 · 12:30 PM',
     title: 'Meet Your Tech Friends',
     desc: 'Find a teammate, a mentor or your next collaborator. Short intros, snacks and plenty of time to talk.',
     tags: ['Networking', 'Community'],

@@ -127,7 +127,7 @@ header.top { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 60; 
 .p1 { --bg: var(--cyan); --fg: var(--ink); --art: #BFEFFA; --btn: var(--ink); --btnfg: var(--cyan); }
 .p2 { --bg: #111; --fg: #fff; --art: #2A2A2A; --btn: #fff; --btnfg: #111; }
 .p3 { --bg: var(--yellow); --fg: #2A1F00; --art: #F3D676; --btn: #2A1F00; --btnfg: var(--yellow); }
-.p4 { --bg: var(--pink); --fg: #fff; --art: #E8508F; --btn: #fff; --btnfg: var(--pink); }
+.p4 { --bg: var(--mint); --fg: var(--ink); --art: #DDF5E8; --btn: var(--ink); --btnfg: var(--mint); }
 .info { padding: 22px 12px 14px 20px; display: flex; flex-direction: column; min-width: 0; }
 .info .when { display: flex; align-items: center; gap: 12px; }
 .info .when::before { content: ""; width: 10px; height: 10px; border-radius: 50%; background: currentColor; }

@@ -54,16 +54,18 @@ const arts = {
       <path d="M35 43l3 6 6 3-6 3-3 6-3-6-6-3 6-3zM164 36l3 6 6 3-6 3-3 6-3-6-6-3 6-3z" fill="#fff" stroke="#2A1F00" strokeWidth="2" strokeLinejoin="round" />
     </svg>
   ),
-  network: (
+  community: (
     <svg viewBox="0 0 200 150">
-      <g stroke="#fff" strokeWidth="4">
-        <path d="M100 75L45 40M100 75L158 42M100 75L50 112M100 75L152 110" />
-      </g>
-      <circle cx="100" cy="75" r="22" fill="#E5B230" stroke="#fff" strokeWidth="4" />
-      <circle cx="45" cy="40" r="14" fill="#3FD0EE" stroke="#fff" strokeWidth="4" />
-      <circle cx="158" cy="42" r="14" fill="#A8E6C4" stroke="#fff" strokeWidth="4" />
-      <circle cx="50" cy="112" r="14" fill="#fff" />
-      <circle cx="152" cy="110" r="14" fill="#101010" stroke="#fff" strokeWidth="4" />
+      <path d="M25 18h65a9 9 0 0 1 9 9v20a9 9 0 0 1-9 9H56L42 67v-11H25a9 9 0 0 1-9-9V27a9 9 0 0 1 9-9z" fill="#fff" stroke="#101010" strokeWidth="4" strokeLinejoin="round" />
+      <circle cx="39" cy="37" r="3" fill="#3FD0EE" />
+      <circle cx="54" cy="37" r="3" fill="#3FD0EE" />
+      <circle cx="69" cy="37" r="3" fill="#3FD0EE" />
+      <path d="M115 33h59a9 9 0 0 1 9 9v19a9 9 0 0 1-9 9h-14v10l-14-10h-31a9 9 0 0 1-9-9V42a9 9 0 0 1 9-9z" fill="#E5B230" stroke="#101010" strokeWidth="4" strokeLinejoin="round" />
+      <path d="M130 50h30" stroke="#101010" strokeWidth="4" strokeLinecap="round" />
+      <circle cx="59" cy="93" r="13" fill="#3FD0EE" stroke="#101010" strokeWidth="4" />
+      <circle cx="100" cy="86" r="15" fill="#D1055E" stroke="#101010" strokeWidth="4" />
+      <circle cx="142" cy="93" r="13" fill="#E5B230" stroke="#101010" strokeWidth="4" />
+      <path d="M35 137c1-19 9-29 24-29s23 10 24 29M72 137c1-22 10-34 28-34s27 12 28 34M117 137c1-19 9-29 25-29s23 10 24 29" fill="#3BCE86" stroke="#101010" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
     </svg>
   ),
 }
