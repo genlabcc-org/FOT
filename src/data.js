@@ -16,9 +16,9 @@ export const NAV = [
 export const SESSIONS = [
   {
     id: 1, tone: 'p1', art: 'terminal', label: 'Talk · 25 min', when: 'Sat 14 Nov 2026 · 10:00 AM',
-    title: 'Start Building Today',
-    desc: 'A friendly walkthrough of the tools beginners need, from your first repo to your first deployed page.',
-    tags: ['Beginners', 'Web'],
+    title: 'When AI Finds Its Voice',
+    desc: 'Discover how AI listens, understands human speech, and responds naturally. Explore the technology behind voice agents and the future of conversational experiences.',
+    tags: ['AI', 'Voice agents'],
   },
   {
     id: 2, tone: 'p2', art: 'chip', label: 'Live demo · 30 min', when: 'Sat 14 Nov 2026 · 10:45 AM',
