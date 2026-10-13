@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from 'react'
+import fotGroupImg from '../assets/fot-group.png'
 
 function Blob({ smiling }) {
   const eyes = useRef(null)
@@ -40,77 +41,62 @@ function Blob({ smiling }) {
   )
 }
 
-function RegisterForm({ form, onChange }) {
-  const [done, setDone] = useState(false)
-  const nameRef = useRef(null)
-  const emailRef = useRef(null)
-
-  const set = (key) => (e) => onChange(key, e.target.value)
-
-  const submit = (e) => {
-    e.preventDefault()
-    if (!form.name.trim()) return nameRef.current.focus()
-    if (form.email.indexOf('@') < 1) return emailRef.current.focus()
-    setDone(true)
-  }
-
-  return (
-    <form onSubmit={submit} noValidate>
-      <label htmlFor="name">
-        Full name
-        <input id="name" ref={nameRef} autoComplete="name" placeholder="Your name" value={form.name} onChange={set('name')} />
-      </label>
-      <label htmlFor="email">
-        Email
-        <input id="email" ref={emailRef} type="email" autoComplete="email" placeholder="you@example.com" value={form.email} onChange={set('email')} />
-      </label>
-      <label htmlFor="college">
-        College name
-        <input id="college" autoComplete="organization" placeholder="Your college" value={form.college} onChange={set('college')} />
-      </label>
-      <label htmlFor="phone">
-        Phone number
-        <input id="phone" type="tel" autoComplete="tel" placeholder="Your phone number" value={form.phone} onChange={set('phone')} />
-      </label>
-      <button className="cta" type="submit" style={{ justifySelf: 'start', marginTop: 4 }}>
-        <b>
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="2.4">
-            <path d="M2 3l5 5-5 5M8 3l5 5-5 5" />
-          </svg>
-        </b>
-        Register now
-      </button>
-      {done && (
-        <p className="ok show" role="status">Thanks! This preview form does not store entries yet.</p>
-      )}
-      <p className="fine">Preview form. Connect it to your registration tool before sharing the page.</p>
-    </form>
-  )
-}
-
 export default function Talk() {
-  const [form, setForm] = useState({
-    name: '',
-    email: '',
-    college: '',
-    phone: ''
-  })
-  const smiling = Object.values(form).every((value) => value.trim().length > 0)
-  const updateForm = (key, value) => {
-    setForm((current) => ({ ...current, [key]: value }))
+  const [smiling, setSmiling] = useState(false)
+  const [registered, setRegistered] = useState(false)
+
+  const handleRegister = () => {
+    setRegistered(true)
+    setSmiling(true)
   }
 
   return (
     <section className="talk pad" id="register" data-sec="register">
       <div className="wrap" style={{ position: 'relative' }}>
+        <div className="talk-h" style={{ textAlign: 'center', marginBottom: 36 }}>
+          <h2>LET<span className="talk-apos">&apos;</span>S MEET</h2>
+          <p className="copy" style={{ margin: '14px auto 0', maxWidth: '34em', textAlign: 'center' }}>
+            Tell us a little about you so we can plan the day around what you want to learn. Come solo or bring a friend.
+          </p>
+        </div>
         <div className="grid">
-          <Blob smiling={smiling} />
+          <Blob smiling={smiling || registered} />
           <div>
-            <h2>Let's meet</h2>
-            <p className="copy">
-              Tell us a little about you so we can plan the day around what you want to learn. Come solo or bring a friend.
-            </p>
-            <RegisterForm form={form} onChange={updateForm} />
+            <div className="talk-group-container">
+              <div
+                className="group-pic-frame"
+                onMouseEnter={() => setSmiling(true)}
+                onMouseLeave={() => !registered && setSmiling(false)}
+              >
+                <img
+                  src={fotGroupImg}
+                  alt="FOT Community Crew"
+                />
+              </div>
+
+              <div style={{ marginTop: 20, display: 'flex', alignItems: 'center', gap: 16, flexWrap: 'wrap' }}>
+                <button
+                  className="cta"
+                  type="button"
+                  onClick={handleRegister}
+                  onMouseEnter={() => setSmiling(true)}
+                  onMouseLeave={() => !registered && setSmiling(false)}
+                  style={{ justifySelf: 'start', marginTop: 0 }}
+                >
+                  <b>
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="2.4">
+                      <path d="M2 3l5 5-5 5M8 3l5 5-5 5" />
+                    </svg>
+                  </b>
+                  Register now
+                </button>
+                {registered && (
+                  <p className="ok show" role="status" style={{ margin: 0 }}>
+                    🎉 You're registered! See you at the meetup.
+                  </p>
+                )}
+              </div>
+            </div>
           </div>
         </div>
         <div className="comment">
@@ -127,3 +113,4 @@ export default function Talk() {
     </section>
   )
 }
+
