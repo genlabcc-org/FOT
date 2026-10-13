@@ -27,7 +27,7 @@ export const SESSIONS = [
     tags: ['AI', 'Productivity'],
   },
   {
-    id: 3, tone: 'p3', art: 'browser', label: 'Workshop · 45 min', when: 'Sat 14 Nov 2026 · 11:30 AM',
+    id: 3, tone: 'p3', art: 'award', label: 'Workshop · 45 min', when: 'Sat 14 Nov 2026 · 11:30 AM',
     title: 'Design It, Then Ship It',
     desc: 'Turn a rough idea into a clean landing page. Sketch, build and publish with a mentor beside you.',
     tags: ['Design', 'Hands-on'],

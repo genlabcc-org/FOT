@@ -40,14 +40,18 @@ const arts = {
       <path d="M173 61l3 6 6 3-6 3-3 6-3-6-6-3 6-3z" fill="#3BCE86" stroke="#101010" strokeWidth="2" strokeLinejoin="round" />
     </svg>
   ),
-  browser: (
+  award: (
     <svg viewBox="0 0 200 150">
-      <rect x="12" y="18" width="176" height="114" fill="#fff" stroke="#2A1F00" strokeWidth="4" />
-      <rect x="12" y="18" width="176" height="26" fill="#2A1F00" />
-      <rect x="28" y="58" width="68" height="60" fill="#D1055E" />
-      <rect x="108" y="58" width="64" height="12" fill="#2A1F00" />
-      <rect x="108" y="80" width="46" height="12" fill="#2A1F00" />
-      <rect x="108" y="102" width="56" height="16" fill="#3FD0EE" stroke="#2A1F00" strokeWidth="3" />
+      <path d="M62 30h76l-7 39a31 31 0 0 1-62 0z" fill="#E5B230" stroke="#2A1F00" strokeWidth="5" strokeLinejoin="round" />
+      <path d="M64 40H42v10a24 24 0 0 0 27 24M136 40h22v10a24 24 0 0 1-27 24" fill="none" stroke="#2A1F00" strokeWidth="6" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M100 40l5 10 11 2-8 8 2 11-10-5-10 5 2-11-8-8 11-2z" fill="#D1055E" stroke="#2A1F00" strokeWidth="3" strokeLinejoin="round" />
+      <path d="M100 85v17m-20 0h40" fill="none" stroke="#2A1F00" strokeWidth="7" strokeLinecap="round" />
+      <path d="M77 105h46l9 14H68z" fill="#3FD0EE" stroke="#2A1F00" strokeWidth="4" strokeLinejoin="round" />
+      <path d="M68 123h64v13H68z" fill="#E5B230" stroke="#2A1F00" strokeWidth="4" strokeLinejoin="round" />
+      <circle cx="42" cy="101" r="13" fill="#D1055E" stroke="#2A1F00" strokeWidth="3" />
+      <path d="M42 93l3 6 6 1-4 5 1 6-6-3-6 3 1-6-4-5 6-1z" fill="#fff" />
+      <path d="M156 101l4 8 9 1-6 6 2 9-9-4-8 4 2-9-7-6 9-1z" fill="#3FD0EE" stroke="#2A1F00" strokeWidth="3" strokeLinejoin="round" />
+      <path d="M35 43l3 6 6 3-6 3-3 6-3-6-6-3 6-3zM164 36l3 6 6 3-6 3-3 6-3-6-6-3 6-3z" fill="#fff" stroke="#2A1F00" strokeWidth="2" strokeLinejoin="round" />
     </svg>
   ),
   network: (
