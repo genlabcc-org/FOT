@@ -15,7 +15,7 @@ export const NAV = [
 
 export const SESSIONS = [
   {
-    id: 1, tone: 'p1', art: 'terminal', label: 'Talk · 25 min', when: 'Sat 14 Nov 2026 · 10:00 AM',
+    id: 1, tone: 'p1', art: 'voice', label: 'Talk · 25 min', when: 'Sat 14 Nov 2026 · 10:00 AM',
     title: 'When AI Finds Its Voice',
     desc: 'Discover how AI listens, understands human speech, and responds naturally. Explore the technology behind voice agents and the future of conversational experiences.',
     tags: ['AI', 'Voice agents'],

@@ -1,4 +1,16 @@
 const arts = {
+  voice: (
+    <svg viewBox="0 0 200 150">
+      <path d="M66 58a35 35 0 0 1 68 0M56 48a46 46 0 0 1 88 0" fill="none" stroke="#3FD0EE" strokeWidth="5" strokeLinecap="round" />
+      <path d="M63 79a38 38 0 0 0 74 0" fill="none" stroke="#D1055E" strokeWidth="5" strokeLinecap="round" />
+      <rect x="86" y="29" width="28" height="55" rx="14" fill="#101010" />
+      <path d="M94 44v15m8-22v30m8-23v16" stroke="#3FD0EE" strokeWidth="4" strokeLinecap="round" />
+      <path d="M75 69v7a25 25 0 0 0 50 0v-7M100 101v13m-15 0h30" fill="none" stroke="#101010" strokeWidth="5" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M151 84h27v22h-15l-8 7v-7h-4z" fill="#fff" stroke="#101010" strokeWidth="3" strokeLinejoin="round" />
+      <path d="M157 95h3m5 0h3m5 0h1" stroke="#3BCE86" strokeWidth="3" strokeLinecap="round" />
+      <path d="M42 30l3 7 7 3-7 3-3 7-3-7-7-3 7-3z" fill="#E5B230" stroke="#101010" strokeWidth="2" strokeLinejoin="round" />
+    </svg>
+  ),
   terminal: (
     <svg viewBox="0 0 200 150">
       <rect x="10" y="14" width="180" height="122" rx="6" fill="#101010" />
