@@ -23,11 +23,21 @@ const arts = {
   ),
   chip: (
     <svg viewBox="0 0 200 150">
-      <rect x="60" y="35" width="80" height="80" rx="8" fill="#3FD0EE" />
-      <rect x="82" y="57" width="36" height="36" rx="5" fill="#101010" />
-      <g stroke="#3FD0EE" strokeWidth="6" strokeLinecap="round">
-        <path d="M80 20v15M100 20v15M120 20v15M80 115v15M100 115v15M120 115v15M45 55h15M45 75h15M45 95h15M140 55h15M140 75h15M140 95h15" />
-      </g>
+      <path d="M100 12v14" stroke="#E5B230" strokeWidth="4" strokeLinecap="round" />
+      <path d="M95 19l5-7 5 7" fill="none" stroke="#101010" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+      <rect x="37" y="34" width="126" height="82" rx="7" fill="#3FD0EE" stroke="#101010" strokeWidth="5" />
+      <rect x="45" y="42" width="110" height="66" rx="3" fill="#101010" />
+      <path d="M45 54h110" stroke="#3FD0EE" strokeWidth="3" />
+      <circle cx="53" cy="48" r="2" fill="#D1055E" />
+      <circle cx="61" cy="48" r="2" fill="#E5B230" />
+      <circle cx="69" cy="48" r="2" fill="#3BCE86" />
+      <path d="M56 69l8 6-8 6m14 0h17m-31 10 8 6-8 6m14 0h17" fill="none" stroke="#3FD0EE" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
+      <rect x="109" y="64" width="34" height="31" rx="4" fill="#fff" />
+      <path d="M126 69v20m-9-10h18" stroke="#D1055E" strokeWidth="4" strokeLinecap="round" />
+      <path d="M25 119h150l-13 17H38z" fill="#3FD0EE" stroke="#101010" strokeWidth="4" strokeLinejoin="round" />
+      <path d="M78 124h44" stroke="#101010" strokeWidth="4" strokeLinecap="round" />
+      <path d="M25 46l4 8 8 4-8 4-4 8-4-8-8-4 8-4z" fill="#E5B230" stroke="#101010" strokeWidth="2" strokeLinejoin="round" />
+      <path d="M173 61l3 6 6 3-6 3-3 6-3-6-6-3 6-3z" fill="#3BCE86" stroke="#101010" strokeWidth="2" strokeLinejoin="round" />
     </svg>
   ),
   browser: (
