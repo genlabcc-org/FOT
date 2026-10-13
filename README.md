@@ -1,17 +1,27 @@
-# React + Vite
+# FOT (Friends of Tech) landing page
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+React + Vite. Design-canvas style: grid paper, ruler, "YOU" cursor, selection-box wordmark,
+stacked folder-tab session panels, blob mascot and a registration form.
 
-Currently, two official plugins are available:
+## Run it
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+```bash
+npm install
+npm run dev      # http://localhost:5173
+npm run build    # single-file build in dist/
+```
 
-## React Compiler
+## Edit the event
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+All event text lives in `src/data.js` (date, time, venue, sessions, roles). The hero tags and
+footer text are in `src/components/Hero.jsx` and `src/components/Chrome.jsx`.
 
-## Expanding the Oxlint configuration
+## Registration form
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
-# FOT
+`RegisterForm` in `src/components/Talk.jsx` only validates and shows a thank-you message.
+Replace the `submit` handler with a call to your form backend (Google Forms, Formspree, your API).
+
+## No-install preview
+
+`node build-preview.mjs` writes `preview.html`, which inlines these same components and loads
+React and Babel from a CDN. Useful for a quick look, not for production.
