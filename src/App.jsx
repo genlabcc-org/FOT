@@ -4,6 +4,7 @@ import Hero from './components/Hero.jsx'
 import About, { Wave } from './components/About.jsx'
 import Sessions from './components/Sessions.jsx'
 import Talk from './components/Talk.jsx'
+import Highlights from './components/Highlights.jsx'
 
 export default function App() {
   const [active, setActive] = useState('top')
@@ -32,6 +33,7 @@ export default function App() {
         <About />
         <Sessions />
         <Talk />
+        <Highlights />
       </main>
       <Footer />
     </>

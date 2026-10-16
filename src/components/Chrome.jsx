@@ -183,6 +183,7 @@ export function Footer() {
               <li><a href="#about">About</a></li>
               <li><a href="#sessions">Sessions</a></li>
               <li><a href="#register">Register</a></li>
+              <li><a href="#highlights">Highlights</a></li>
             </ul>
           </div>
           <div className="big" aria-hidden="true" style={{ textAlign: 'center' }}>FOT</div>
